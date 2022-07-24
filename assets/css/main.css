@@ -2427,3 +2427,21 @@ input, select, textarea {
 			}
 
 	}
+	html, body {
+		margin: 0;
+		height: 100%;
+	 }
+	 iframe {
+		box-sizing: border-box;   /* make the border size be included in the height */
+		display: block;           /* make them block to fix white space margin */
+		width: 100%;
+	  }
+	  iframe:nth-child(1) {
+		height: 1800px;
+	  }
+	  iframe:nth-child(3) {
+		height: 1100px;
+	  }
+	  iframe:nth-child(2) {
+		height: calc(100% - 55px);  /* 55px = sum of menu/footer iframe height */
+	  }
